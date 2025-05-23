@@ -16,17 +16,17 @@
         }
 
         .widget {
-            padding: 3px 3px ;
-            color: #ffb6c1;
+            padding: 5px 5px ;
+            color: #fc6c85;
             display: flex;
             justify-content:center;
             align-items:center;
             flex-direction: column;
-            max-width: 50%;
+            max-width: 95%;
             margin: auto;
-            border: 3px solid #ffb6c1;
+            border: 3px solid #fc6c85;
             border-radius: 5px;
-            box-shadow: 2px 2px 1px 0px #ffb6c1;
+            box-shadow: 2px 2px 1px 0px #fc6c85;
 
         }
 
@@ -38,17 +38,17 @@
         .date {
       
             font-family: monospace;
-            font-size: 1em;
+            font-size: 2em;
         }
 
         .clock {
             font-family: monospace;
-            font-size: 1em;
+            font-size: 2em;
         }
 
         .time {
             display: inline-block;
-            min-width: 15px;
+            min-width: 20px;
         }
 
         .colon {
@@ -95,11 +95,7 @@
 
 function dispalyGreetings(today){
         hrs = today.getHours();
-        name="MackwillI just want you to know how happy and blessed I feel to have you in my life.
-You bring so much light into my world, and every moment feels special—even when we're apart.
-Just thinking of you makes my heart smile. Thank you being you. 💖
-With all my love"
-    
+        name="Mackwill, I am lucky and blessed to have you in my life"
         if (hrs < 12)
             greet = 'Good Morning  '+name;
         else if (hrs >= 12 && hrs <= 17)
@@ -107,7 +103,7 @@ With all my love"
         else if (hrs >= 17 && hrs <= 24)
             greet = 'Good Evening  '+name;
         document.getElementById('greet').innerHTML = greet;
-    
+
     }
 
     function dispalyDate(today) {  
