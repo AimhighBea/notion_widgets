@@ -32,18 +32,18 @@
 
            
         .greet{
-            font-size: 3em;
+            font-size: 2em;
         }
 
         .date {
       
             font-family: monospace;
-            font-size: 2em;
+            font-size: 1em;
         }
 
         .clock {
             font-family: monospace;
-            font-size: 2em;
+            font-size: 1em;
         }
 
         .time {
@@ -95,7 +95,14 @@
 
 function dispalyGreetings(today){
         hrs = today.getHours();
-        name = "Mackwill, I am lucky and blessed to have you in my life"
+        name = "Mackwill,
+            I hope u slept well and woke up with a smile.
+            Just a little reminder, you are the first thought my mind when I open my eyes.
+            I feel so lucky and grateful to have you.
+            May your day be as amazing as your heart.
+            Sending you all my hugs and kisses and good vibes for the day ahead.
+            I love you, Mackwill. Always!"
+    
         if (hrs < 12)
             greet = 'Good Morning  '+name;
         else if (hrs >= 12 && hrs <= 17)
